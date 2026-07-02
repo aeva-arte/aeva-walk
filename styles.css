@@ -125,6 +125,8 @@ a { color: inherit; text-decoration: none; }
 .hero .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .hero .cta-row.center { justify-content: center; }
 .hero-note { margin-top: 16px; font-size: 13px; color: var(--fg-3); letter-spacing: 0.01em; }
+.hero-areas { margin-top: 22px; font-size: 14px; font-weight: 500; color: var(--fg-2); letter-spacing: 0.01em; }
+.hero-areas + .hero-note { margin-top: 8px; }
 .hero-visual img {
   width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
   border-radius: 16px; border: 1px solid var(--line);
