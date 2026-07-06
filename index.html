@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>aeva walk — Photo walks through Japan's iconic views</title>
-  <meta name="description" content="A local photographer walks Japan's iconic spots with you — Tokyo, Kanagawa, Nagoya &amp; Osaka — timing the light and capturing your trip in natural, editorial photos. Book a private photo walk with aeva." />
-  <meta name="theme-color" content="#0a0a0b" />
+  <title>aeva walk | Photo walks through Japan's iconic views</title>
+  <meta name="description" content="A local photographer guides you to Japan's iconic spots in Tokyo, Kanagawa, Nagoya and Osaka, times the light, and captures your trip in editorial photos. Book a private photo walk with aeva." />
+  <meta name="theme-color" content="#0b0b0c" />
 
   <!-- Social share (OGP) -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="aeva walk — Photo walks through Japan's iconic views" />
-  <meta property="og:description" content="A local photographer walks Japan's iconic views with you and captures your trip. Private photo walks — book with aeva." />
+  <meta property="og:title" content="aeva walk | Photo walks through Japan's iconic views" />
+  <meta property="og:description" content="A local photographer walks Japan's iconic views with you and captures your trip. Private photo walks, book with aeva." />
   <meta property="og:url" content="https://aeva-arte.github.io/aeva-walk/" />
   <meta property="og:image" content="https://aeva-arte.github.io/aeva-walk/images/hero.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
 
+  <!-- progressive enhancement flag: enables scroll reveals. Without JS everything shows normally. -->
+  <script>document.documentElement.classList.add('js')</script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -36,199 +39,212 @@
       <a class="hide-sm" href="#plans">Plans</a>
       <a class="hide-sm" href="#gallery">Gallery</a>
       <a class="hide-sm" href="#faq">FAQ</a>
-      <a class="btn btn--sm btn--solid" href="#book">Book</a>
+      <a class="btn btn-solid btn-sm" href="#book">Book</a>
     </nav>
   </header>
 
   <main id="top">
 
-    <!-- ================= HERO ================= -->
+    <!-- ================= HERO (stack: eyebrow / h1 / sub / CTAs = 4 elements) ================= -->
     <section class="hero">
       <div class="hero-copy">
-        <span class="eyebrow">Private photo walks · Japan</span>
-        <h1>Photo walks through<br><span class="grad">Japan's iconic views</span></h1>
-        <p class="lead">
-          A local photographer walks the iconic spots with you — timing the light,
-          finding the angles — and captures your trip in natural, editorial photos
-          you'll actually want to keep.
+        <span class="eyebrow" data-rise style="--i:0">Private photo walks · Japan</span>
+        <h1 data-rise style="--i:1">Photo walks through<br /><span class="accent">Japan's iconic views</span></h1>
+        <p class="sub" data-rise style="--i:2">
+          A local photographer guides you to the iconic spots, times the light,
+          and captures your trip in editorial photos.
         </p>
-        <div class="cta-row">
-          <a class="btn btn--solid btn--lg" href="#book">Book a walk</a>
-          <a class="btn btn--lg" href="#gallery">See the photos</a>
+        <div class="cta-row" data-rise style="--i:3">
+          <a class="btn btn-solid" href="#book">Book a walk</a>
+          <a class="btn btn-ghost" href="#gallery">See the photos</a>
         </div>
-        <p class="hero-areas">Available in Tokyo · Kanagawa · Nagoya · Osaka</p>
-        <p class="hero-note">English OK · translation app friendly · 中文 / 한국어 も対応</p>
       </div>
-      <div class="hero-visual">
-        <img src="images/hero.jpg" alt="Atmospheric evening cityscape in Japan" />
+      <figure class="hero-visual" data-rise style="--i:2">
+        <img src="images/hero.jpg" alt="Neon-lit Tokyo street at night, long exposure" />
+      </figure>
+    </section>
+
+    <!-- meta strip: booking facts live here, not inside the hero stack -->
+    <div class="meta-strip" role="note">
+      <span>Tokyo · Kanagawa · Nagoya · Osaka</span>
+      <span aria-hidden="true">/</span>
+      <span>English OK · translation app friendly</span>
+      <span aria-hidden="true">/</span>
+      <span lang="ja">中文・한국어も対応</span>
+    </div>
+
+    <!-- ================= HOW IT WORKS: numbered rail ================= -->
+    <section class="section" id="how">
+      <div class="inner">
+        <h2 class="title reveal">Simple, from message to memories</h2>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="num">01</span>
+            <div>
+              <h3>Message me</h3>
+              <p>Send a DM or email. No perfect English needed, just your dates and the vibe you want.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="num">02</span>
+            <div>
+              <h3>Pick spots &amp; timing</h3>
+              <p>I plan the route around light: sunset decks, neon crossings, gardens, skyline views.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="num">03</span>
+            <div>
+              <h3>Walk &amp; shoot</h3>
+              <p>We stroll at an easy pace. I guide simple poses and catch the candid moments between them.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="num">04</span>
+            <div>
+              <h3>Get your gallery</h3>
+              <p>Edited photos delivered in a private online gallery within one week.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ================= HOW IT WORKS ================= -->
-    <section class="section section--line" id="how">
-      <span class="eyebrow">How it works</span>
-      <h2 class="section-title">Simple, from message to memories</h2>
-      <ol class="steps">
-        <li>
-          <span class="step-n">01</span>
-          <h3>Message me</h3>
-          <p>Send a DM or email — no perfect English needed. Tell me your dates and vibe.</p>
-        </li>
-        <li>
-          <span class="step-n">02</span>
-          <h3>Pick spots &amp; timing</h3>
-          <p>I plan the route around light — sunset decks, neon crossings, gardens, skyline views.</p>
-        </li>
-        <li>
-          <span class="step-n">03</span>
-          <h3>Walk &amp; shoot</h3>
-          <p>We stroll together at an easy pace. I guide simple poses and catch candid moments.</p>
-        </li>
-        <li>
-          <span class="step-n">04</span>
-          <h3>Get your gallery</h3>
-          <p>Edited photos delivered in a private online gallery within one week.</p>
-        </li>
-      </ol>
-    </section>
+    <!-- ================= PLANS: asymmetric grid, featured Standard ================= -->
+    <section class="section section-line" id="plans">
+      <div class="inner">
+        <span class="eyebrow reveal">Plans</span>
+        <h2 class="title reveal">Choose your walk</h2>
+        <p class="muted reveal">Prices are per session, for 1 to 2 people. Larger groups on request.</p>
 
-    <!-- ================= PLANS ================= -->
-    <section class="section section--line" id="plans">
-      <span class="eyebrow">Plans</span>
-      <h2 class="section-title">Choose your walk</h2>
-      <p class="lead center">Prices are per session, for 1–2 people. Larger groups on request.</p>
+        <div class="plans-grid">
+          <article class="plan plan-featured reveal" id="plan-standard">
+            <p class="plan-tag">Most popular</p>
+            <h3>Standard Walk</h3>
+            <p class="price">¥15,000</p>
+            <ul>
+              <li>2.5 hours</li>
+              <li>2 to 3 spots</li>
+              <li>Around 60 edited photos</li>
+            </ul>
+            <a class="btn btn-solid" href="#book">Book</a>
+          </article>
+          <article class="plan reveal" id="plan-light">
+            <h3>Light Walk</h3>
+            <p class="price">¥10,000</p>
+            <ul>
+              <li>90 minutes · 1 area</li>
+              <li>Around 30 edited photos</li>
+            </ul>
+            <a class="btn btn-ghost" href="#book">Book</a>
+          </article>
+          <article class="plan reveal" id="plan-half">
+            <h3>Half-day</h3>
+            <p class="price">¥24,000</p>
+            <ul>
+              <li>4 hours · multiple areas</li>
+              <li>Around 100 edited photos</li>
+            </ul>
+            <a class="btn btn-ghost" href="#book">Book</a>
+          </article>
+        </div>
 
-      <div class="plans">
-        <div class="plan">
-          <h3>Light Walk</h3>
-          <p class="price">¥10,000</p>
-          <ul>
-            <li>90 minutes</li>
-            <li>1 area</li>
-            <li>~30 edited photos</li>
-          </ul>
-          <a class="btn btn--block" href="#book">Book Light</a>
-        </div>
-        <div class="plan plan--feature">
-          <span class="tag">Most popular</span>
-          <h3>Standard Walk</h3>
-          <p class="price">¥15,000</p>
-          <ul>
-            <li>2.5 hours</li>
-            <li>2–3 spots</li>
-            <li>~60 edited photos</li>
-          </ul>
-          <a class="btn btn--solid btn--block" href="#book">Book Standard</a>
-        </div>
-        <div class="plan">
-          <h3>Half-day</h3>
-          <p class="price">¥24,000</p>
-          <ul>
-            <li>4 hours</li>
-            <li>Multiple areas</li>
-            <li>~100 edited photos</li>
-          </ul>
-          <a class="btn btn--block" href="#book">Book Half-day</a>
-        </div>
+        <p class="fineprint reveal">
+          Included: private online gallery, delivery within one week. Not included: your transport,
+          entry fees, food. Rain? We reschedule for free or move to covered spots.
+        </p>
       </div>
-
-      <p class="fineprint">
-        Included: private online gallery, delivery within one week. Not included: your transport,
-        entry fees, food. Rain? We reschedule for free or move to covered spots.
-      </p>
     </section>
 
-    <!-- ================= GALLERY ================= -->
-    <section class="section section--line" id="gallery">
-      <span class="eyebrow">Gallery</span>
-      <h2 class="section-title">The kind of light I shoot for</h2>
-      <div class="grid">
-        <img src="images/works/landscape-03.jpg" alt="Golden-hour viewpoint at dusk" loading="lazy" />
-        <img src="images/works/city-01.jpg" alt="Evening tram in the city" loading="lazy" />
-        <img src="images/works/city-03.jpg" alt="Fireworks over the bay at night" loading="lazy" />
-        <img src="images/works/travel-01.jpg" alt="Waterfront at sunset" loading="lazy" />
-        <img src="images/works/city-02.jpg" alt="Neon street, long exposure" loading="lazy" />
-        <img src="images/works/travel-03.jpg" alt="Modern architecture and sky" loading="lazy" />
-      </div>
-      <p class="center">
-        <a class="link-arrow" href="https://www.instagram.com/aeva_arte/" target="_blank" rel="noopener">More on Instagram @aeva_arte →</a>
-      </p>
-    </section>
-
-    <!-- ================= ABOUT / WHY ================= -->
-    <section class="section section--line about" id="about">
-      <div class="about-grid">
-        <div class="about-photo">
-          <img src="images/about.jpg" alt="aeva — the photographer" loading="lazy" />
+    <!-- ================= GALLERY: mosaic ================= -->
+    <section class="section section-line" id="gallery">
+      <div class="inner">
+        <h2 class="title reveal">The kind of light I shoot for</h2>
+        <div class="mosaic">
+          <img class="feature reveal" src="images/works/landscape-03.jpg" alt="Golden-hour viewpoint at dusk" loading="lazy" />
+          <img class="reveal" src="images/works/city-01.jpg" alt="Evening tram in the city" loading="lazy" />
+          <img class="reveal" src="images/works/city-03.jpg" alt="Fireworks over the bay at night" loading="lazy" />
+          <img class="reveal" src="images/works/travel-01.jpg" alt="Waterfront at sunset" loading="lazy" />
+          <img class="reveal" src="images/works/city-02.jpg" alt="Neon street, long exposure" loading="lazy" />
+          <img class="reveal" src="images/works/travel-03.jpg" alt="Modern architecture against the sky" loading="lazy" />
         </div>
+        <p class="center reveal">
+          <a class="link-arrow" href="https://www.instagram.com/aeva_arte/" target="_blank" rel="noopener">More on Instagram @aeva_arte</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT: split ================= -->
+    <section class="section section-line" id="about">
+      <div class="inner about-grid">
+        <figure class="about-photo reveal">
+          <img src="images/about.jpg" alt="Riki, the photographer behind aeva" loading="lazy" />
+        </figure>
         <div class="about-copy">
-          <span class="eyebrow">Your photographer</span>
-          <h2 class="section-title">Not a tour. A walk with a photographer's eye.</h2>
-          <p class="lead">
-            I'm the Japanese photographer behind <a href="https://www.instagram.com/aeva_arte/" target="_blank" rel="noopener">aeva</a>.
-            I shoot Japan's landscapes, streets and famous places for the atmosphere they carry —
-            and on a walk, that eye is yours: where to stand, and when the light turns.
+          <h2 class="title reveal">Not a tour. A walk with a photographer's eye.</h2>
+          <p class="muted reveal">
+            I'm the Japanese photographer behind <a href="https://aeva-arte.github.io" target="_blank" rel="noopener">aeva</a>.
+            I shoot Japan's landscapes, streets and famous places for the atmosphere they carry.
+            On a walk, that eye is yours: where to stand, and when the light turns.
           </p>
           <ul class="ticks">
-            <li>Iconic spots, perfectly timed — golden hour, blue hour, neon</li>
-            <li>Natural, editorial photos — you don't need to "pose well"</li>
-            <li>Relaxed pace, friendly, zero pressure</li>
-            <li>Language is no problem: translation apps + simple guidance</li>
+            <li class="reveal">Iconic spots, perfectly timed: golden hour, blue hour, neon</li>
+            <li class="reveal">Natural, editorial photos. You don't need to pose well</li>
+            <li class="reveal">Relaxed pace, friendly, zero pressure</li>
+            <li class="reveal">Language is no problem: translation apps plus simple guidance</li>
           </ul>
-          <a class="link-arrow" href="https://aeva-arte.github.io" target="_blank" rel="noopener">See my full portfolio →</a>
         </div>
       </div>
     </section>
 
     <!-- ================= FAQ ================= -->
-    <section class="section section--line" id="faq">
-      <span class="eyebrow">FAQ</span>
-      <h2 class="section-title">Good to know</h2>
-      <div class="faq">
-        <details>
-          <summary>Do you speak English?</summary>
-          <p>Basic English, plus a translation app for anything more. Booking is by text, so we can
-          take our time. The photos do most of the talking.</p>
-        </details>
-        <details>
-          <summary>Which areas do you cover? Where do we meet?</summary>
-          <p>Currently available in <b>Tokyo, Kanagawa, Nagoya and Osaka</b>. We meet at a station or
-          landmark near the spot we choose — I'll share the exact meeting point and a map after booking.</p>
-        </details>
-        <details>
-          <summary>How many photos do I get, and when?</summary>
-          <p>Roughly 30 / 60 / 100 edited photos depending on the plan, delivered in a private online
-          gallery within one week.</p>
-        </details>
-        <details>
-          <summary>Can I use the photos on social media?</summary>
-          <p>Yes — they're yours to share personally. Please tag <b>@aeva_arte</b> if you like them.</p>
-        </details>
-        <details>
-          <summary>What if it rains?</summary>
-          <p>We reschedule for free, or switch to covered / indoor-friendly spots. Your call.</p>
-        </details>
-        <details>
-          <summary>How do I pay?</summary>
-          <p>Secure online payment (card, incl. Alipay / WeChat Pay) to confirm your booking. Details
-          are sent when you book.</p>
-        </details>
+    <section class="section section-line" id="faq">
+      <div class="inner narrow">
+        <h2 class="title reveal">Good to know</h2>
+        <div class="faq reveal">
+          <details>
+            <summary>Do you speak English?</summary>
+            <p>Basic English, plus a translation app for anything more. Booking is by text, so we can
+            take our time. The photos do most of the talking.</p>
+          </details>
+          <details>
+            <summary>Which areas do you cover? Where do we meet?</summary>
+            <p>Currently available in <b>Tokyo, Kanagawa, Nagoya and Osaka</b>. We meet at a station or
+            landmark near the spot we choose. I'll share the exact meeting point and a map after booking.</p>
+          </details>
+          <details>
+            <summary>How many photos do I get, and when?</summary>
+            <p>Roughly 30, 60 or 100 edited photos depending on the plan, delivered in a private online
+            gallery within one week.</p>
+          </details>
+          <details>
+            <summary>Can I use the photos on social media?</summary>
+            <p>Yes. They're yours to share personally. Please tag <b>@aeva_arte</b> if you like them.</p>
+          </details>
+          <details>
+            <summary>What if it rains?</summary>
+            <p>We reschedule for free, or switch to covered and indoor-friendly spots. Your call.</p>
+          </details>
+          <details>
+            <summary>How do I pay?</summary>
+            <p>Secure online payment (card, incl. Alipay and WeChat Pay) to confirm your booking. Details
+            are sent when you book.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <!-- ================= BOOK ================= -->
-    <section class="section section--line book" id="book">
-      <div class="book-inner">
-        <span class="eyebrow">Book a walk</span>
-        <h2 class="section-title">Let's make some photos.</h2>
-        <p class="lead">
-          Tell me your dates and the vibe you're after. I usually reply within a day.
-        </p>
-        <div class="cta-row center">
-          <a class="btn btn--ig btn--lg" href="https://www.instagram.com/aeva_arte/" target="_blank" rel="noopener">Message on Instagram</a>
-          <a class="btn btn--lg" href="mailto:192418ringowatch@gmail.com?subject=aeva%20walk%20booking">Email to book</a>
+    <section class="section section-line book" id="book">
+      <div class="inner narrow center">
+        <span class="eyebrow reveal">Book a walk</span>
+        <h2 class="title reveal">Let's make some photos.</h2>
+        <p class="muted reveal">Tell me your dates and the vibe you're after. I usually reply within a day.</p>
+        <div class="cta-row center reveal">
+          <a class="btn btn-solid" href="https://www.instagram.com/aeva_arte/" target="_blank" rel="noopener">Message on Instagram</a>
+          <a class="btn btn-ghost" href="mailto:192418ringowatch@gmail.com?subject=aeva%20walk%20booking">Email</a>
         </div>
-        <p class="hero-note">Secure card payment to confirm · free reschedule for rain</p>
+        <p class="booknote reveal">Secure card payment to confirm · free reschedule for rain</p>
       </div>
     </section>
 
@@ -247,7 +263,7 @@
       <a href="#legal">特定商取引法に基づく表記</a>
     </div>
 
-    <!-- 特定商取引法に基づく表記（オンライン販売の法定表示・下書き。公開前に要確認） -->
+    <!-- 特定商取引法に基づく表記（法定表示・v1から内容変更なし） -->
     <details class="legal" id="legal">
       <summary>特定商取引法に基づく表記 / Legal (Japanese)</summary>
       <dl>
@@ -267,6 +283,32 @@
 
     <div class="copy">© 2026 aeva (Riki Niitsu) · Photo walks in Japan</div>
   </footer>
+
+  <!-- scroll reveal: same proven scan pattern as aeva-site (works without IntersectionObserver,
+       verified against the headless-preview constraints in lp-preview). Elements below the fold
+       fade in once as they enter view; hero uses CSS load-in instead. -->
+  <script>
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!els.length) return;
+    function scan() {
+      var h = window.innerHeight || document.documentElement.clientHeight;
+      for (var i = 0; i < els.length; i++) {
+        var el = els[i];
+        if (el.classList.contains('is-visible')) continue;
+        var r = el.getBoundingClientRect();
+        if (r.top < h * 0.88 && r.bottom > 0) {
+          el.style.setProperty('--d', ((i % 5) * 0.06).toFixed(2) + 's');
+          el.classList.add('is-visible');
+        }
+      }
+    }
+    scan();
+    window.addEventListener('scroll', scan, { passive: true });
+    window.addEventListener('resize', scan, { passive: true });
+    window.addEventListener('load', scan);
+  })();
+  </script>
 
 </body>
 </html>
